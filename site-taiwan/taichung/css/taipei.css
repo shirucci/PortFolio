@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* body {
+  background-color: #333;
+} */
+
+/* ↓PC　画面が768px以上の時↓ */
+@media screen and (min-width:768px) {
+  .logo img {
+    display: none;
+  }
+
+  nav ul li:nth-of-type(3) {
+    pointer-events: none;
+  }
+}

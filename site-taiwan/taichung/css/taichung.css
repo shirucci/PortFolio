@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/* header */
+header {
+  background-image: url("../image/tc-top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 667px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  width: 53%;
+  height: 55%;
+  margin: 64px auto 0;
+}
+
+.headDes {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.2em;
+  width: 65%;
+  text-align: left;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+/* header ここまで*/
+main {
+  width: 89%;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+main img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+
+h2 {
+  margin: 0 auto;
+}
+
+.head {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+
+
+.attraction {
+  margin-top: 64px;
+
+}
+
+
+.attraction1 {
+  margin-top: 40px;
+}
+
+.attractionPlace {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.attractionDes {
+  background-color: rgba(237, 161, 132, 0.2);
+  margin: 40px 20px;
+  padding: 20px 16px;
+  font-size: clamp(12px, 1.6vw, 20px);
+}
+
+
+.border {
+
+  margin: 40px auto 60px;
+  border-bottom: 2px solid #000;
+  width: 200px;
+}
+
+.museumAll {
+  margin-top: 60px;
+}
+
+.museum {
+  margin-bottom: 40px;
+}
+
+.museumPr {
+  font-size: 12px;
+  margin: 75px 35px;
+  width: 225px;
+  margin: 40px auto;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.museumHead {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.museumName {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.museumInfo {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.modalRight {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.modalShow {
+  text-align: center;
+  width: 160px;
+  padding: 12px;
+  border: solid 3px #6091d3;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.modalShow::after {
+  content: "";
+  margin-left: 0.5em;
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.5em 0 0.5em 0.865em;
+  border-color: transparent transparent transparent #6091d3;
+  transform: translateY(0.1em) scale(0.8);
+}
+
+/* sp_modal */
+.modalCont {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6091d3;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto;
+
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.modalImg {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.modalImg1 {
+  flex-basis: 48%;
+}
+
+.modalImg2 {
+  flex-basis: 48%;
+}
+
+.modal img {
+  object-fit: cover;
+}
+
+.modalInfo {
+  padding-left: 40px;
+  padding-bottom: 80px;
+}
+
+.modalInfo p {
+  color: #fff;
+  text-align: left;
+
+}
+
+.modalClose {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  position: relative;
+  margin: 8px 8px 0 0;
+}
+
+.modalClose::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  top: 10px;
+  right: -2px;
+  border-bottom: 7px solid #000;
+  transform: rotate(45deg);
+}
+
+.modalClose::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  top: 10px;
+  right: -2px;
+  border-bottom: 7px solid #000;
+  transform: rotate(-45deg);
+}
+
+/*  modal終了*/
+
+/* セクション３ */
+.sweetsName {
+  font-size: 24px;
+}
+
+.sweetsInfo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.swSub {
+  width: 100%;
+  display: flex;
+}
+
+.swSub1 {
+  padding-right: 5px;
+}
+
+.swSub2 {
+  padding-left: 5px;
+}
+
+/* ↓PC　画面が768px以上の時↓ */
+@media screen and (min-width:768px) {
+  .logo img {
+    display: none;
+  }
+
+  nav ul li:nth-of-type(3) {
+    pointer-events: none;
+  }
+
+  main {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 120px auto 80px 20px;
+  }
+
+  .attractionPlace {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .attContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .imgAtt {
+    flex-basis: 50%;
+  }
+
+  .desAtt {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attractionDes {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .border {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .museumAll h2 {
+    margin: 80px 0 80px auto;
+  }
+
+  .titleContainer {
+    width: 50%;
+  }
+
+  .museumPr {
+    margin: 80px 30px 80px auto;
+    font-size: 20px;
+    width: 440px;
+    text-align: center;
+  }
+
+  .museContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .museum {
+    width: 48%;
+  }
+
+  .museum img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .museumInfo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  /* pc_modal */
+  .modalCont img {
+    object-fit: cover;
+  }
+
+  /* pc_modal_end */
+
+  .sweetsTitle {
+    width: 48%;
+    margin: 80px auto 60px 0;
+    position: relative;
+  }
+
+  .sweetsTitle p {
+    margin: 0 auto 40px;
+  }
+
+  .sweetsTitle p:nth-child(1) {
+    font-size: 36px;
+  }
+
+  .sweetsTitle p:nth-child(2) {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 420px;
+    font-size: 20px;
+    margin: 80px auto 80px 30px;
+  }
+
+  .sweetsContainer {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .sweetsContainer1 {
+    /* flex-basis: 48%; */
+    width: 50vw;
+  }
+
+  .sweetsContainer2 {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sweetsContainer2 p {
+    font-size: 1.6vw;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .sweetsContainer3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+  }
+
+  .swSub {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    padding: 10px;
+  }
+
+  .swSub1 {
+    width: 23vw;
+  }
+
+  .swSub2 {
+    width: 23vw;
+  }
+
+  .swSub3 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column-reverse
+  }
+
+
+}

@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+header {
+    background-image: url(../image/tn-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 667px;
+    text-align: center;
+}
+
+header nav ul li:nth-of-type(4) {
+    pointer-events: none;
+}
+main {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.modalCont {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.closeBlock {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+
+.modalClose {
+    display: inline;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    position: relative;
+    margin: 8px 8px 0 0;
+}
+
+.modalClose::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: -2px;
+    border-bottom: 7px solid #000;
+    transform: rotate(45deg);
+}
+
+.modalClose::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: -2px;
+    border-bottom: 7px solid #000;
+    transform: rotate(-45deg);
+}
+
+.modalCont img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 44px auto 0;
+    box-shadow: 7px 7px 4px #d9d9d9;
+}
+
+.tainanInfo {
+    width: 100%;
+    height: 615px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    width: 53%;
+    margin: 64px auto 0;
+}
+
+.headDes {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    width: 65%;
+    text-align: left;
+    position: absolute;
+    bottom: 75px;
+    right: 8px;
+}
+
+/* セクション1　ｺｺｶﾗ */
+h2 {
+    margin: 48px auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin: 48px;
+}
+
+.attractionImg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.attractionImg img {
+    width: 295px;
+    height: 221px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.textArea {
+    width: 295px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 1.6;
+    background-color: rgba(100, 201, 155, 0.2);
+    text-align: justify;
+    padding: 20px 16px;
+    margin: 0 auto 20px;
+}
+
+.subFlex {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.att1Sub1 img,
+.att1Sub2 img {
+    width: 140px;
+}
+
+@media screen and (min-width:768px) {
+    header nav ul li:nth-of-type(4) {
+        pointer-events: none;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .modalClose {
+        width: 36px;
+        height: 36px;
+        margin: 20px 20px 0 0;
+
+    }
+
+    .modalClose::before {
+        width: 45px;
+        top: 13px;
+        right: -5px;
+        border-bottom: 10px solid #000;
+    }
+
+    .modalClose::after {
+        width: 45px;
+        top: 13px;
+        right: -5px;
+        border-bottom: 10px solid #000;
+    }
+
+    .modalClose:hover {
+        cursor: pointer;
+    }
+
+    .modalCont img {
+        width: 450px;
+        height: 450px;
+        margin: 64px auto 0;
+        box-shadow: 10px 10px 6px #d9d9d9;
+    }
+}

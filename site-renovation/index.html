@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Design House Renovations</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_flex">
+      <h1><img src="images/logo.svg" alt="Design House Renovations"></h1>
+      <nav class="g_menu">
+        <input type="checkbox" id="menu_btn" class="menu_btn">
+        <label class="menu_icon" for="menu_btn">
+          <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#flow">施工の流れ</a></li>
+          <li><a href="#qanda">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <img src="images/main.jpg" alt="Design House Renovations" class="main_image">
+    <section class="sec_conc">
+      <hgroup>
+        <h2><a id="concept">concept</a></h2>
+        <p>コンセプト</p>
+      </hgroup>
+      <p class="conc_catch">家族が笑顔になれる場所</p>
+      <p class="conc_lead">
+        家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れのしやすい素材を使用したリフォームをご提案いたします。
+      </p>
+    </section>
+    <section class="sec_ser">
+      <hgroup>
+        <h2><a id="service">service</a></h2>
+        <p>サービス</p>
+      </hgroup>
+      <div class="ser_lead">
+        <section>
+          <p><img src="images/bathroom.jpg" alt="浴室"></p>
+          <h3>浴室</h3>
+          <p class="ser_sentence">ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p>
+          <p class="more"><a href="#">more<span class="arrow"></span></a></p>
+        </section>
+        <section>
+          <p><img src="images/living.jpg" alt="リビング"></p>
+          <h3>リビング</h3>
+          <p class="ser_sentence">照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+          <p class="more"><a href="#">more<span class="arrow"></span></a></p>
+        </section>
+        <section>
+          <p><img src="images/kitchen.jpg" alt="キッチン"></p>
+          <h3>キッチン</h3>
+          <p class="ser_sentence">機能性だけでなく、デザイン性にもこだわっております。</p>
+          <p class="more"><a href="#">more<span class="arrow"></span></a></p>
+        </section>
+      </div>
+    </section>
+    <section class="sec_flow">
+      <hgroup>
+        <h2><a id="flow">flow</a></h2>
+        <p>施工の流れ</p>
+      </hgroup>
+      <ul>
+        <li class="flow_list">ご相談</li>
+        <li class="triangle1"></li>
+        <li class="flow_list">現地調査</li>
+        <li class="triangle2"></li>
+        <li class="flow_list">お見積り</li>
+        <li class="triangle3"></li>
+        <li class="flow_list">ご契約</li>
+        <li class="triangle4"></li>
+        <li class="flow_list">施工</li>
+        <li class="triangle5"></li>
+        <li class="flow_list">お引渡し</li>
+      </ul>
+    </section>
+    <section class="sec_qanda">
+      <hgroup>
+        <h2><a id="qanda">q&amp;a</a></h2>
+        <p>よくあるご質問</p>
+      </hgroup>
+      <div class="qanda_flex">
+        <p><span class="question">Q.</span></p>
+        <p class="flex_text">見積もりは無料ですか？</p>
+      </div>
+      <div class="qanda_flex">
+        <p><span class="answer">A.</span></p>
+        <p class="flex_text">はい。お見積りは無料で承っております。ホームページよりお気軽にお問合せください。</p>
+      </div>
+      <div class="qanda_flex">
+        <p><span class="question">Q.</span></p>
+        <p class="flex_text">普段通り生活をしながらのリフォーム工事は可能ですか？</p>
+      </div>
+      <div class="qanda_flex">
+        <p><span class="answer">A.</span></p>
+        <p class="flex_text">はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであらかじめご了承ください。大型リフォームの場合には、仮住まいもお薦めしております。</p>
+      </div>
+    </section>
+    <section class="sec_cont">
+      <hgroup>
+        <h2><a id="contact">contact</a></h2>
+        <p>お問い合わせ</p>
+      </hgroup>
+      <form action="送信先" method="post">
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>お問い合わせ種別</p>
+            <p class="required">必須</p>
+          </div>
+          <div class="radio_flex">
+            <label class="radio_label"><input type="radio" name="attend" value="資料請求">資料請求</label>
+            <label class="radio_label"><input type="radio" name="attend" value="ご相談">ご相談</label>
+          </div>
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>お名前</p>
+            <p class="required">必須</p>
+          </div>
+          <input type="text" name="user_name" required>
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>フリガナ</p>
+            <p class="required">必須</p>
+          </div>
+          <input type="text" name="user_kana" required>
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>電話番号</p>
+            <p class="required">必須</p>
+          </div>
+          <input type="text" name="user_tel" required>
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>住所</p>
+            <p class="required">必須</p>
+          </div>
+          <p class="postcode"><input type="text" name="user_postcode" required></p>
+        </div>
+        <div class="flex_pc">
+          <span class="cont_flex"></span>
+          <input type="text" name="user_address" required class="address">
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>メールアドレス</p>
+            <p class="required">必須</p>
+          </div>
+          <input type="email" name="user_email" required>
+        </div>
+        <div class="flex_pc">
+          <div class="cont_flex">
+            <p>メールアドレス(確認用)</p>
+            <p class="required">必須</p>
+          </div>
+          <input type="email" name="user_email" required>
+        </div>
+        <div class="flex_pc">
+          <p class="message">お問い合わせ内容</p>
+          <textarea name="message" required></textarea>
+        </div>
+        <div class="submit">
+          <p><input type="submit" value="入力内容を確認する"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <a href="#">
+      <p></p>
+    </a>
+    <p><small>&copy; design house renovations</small></p>
+  </footer>
+  <script>
+    const navInput = document.getElementById('menu_btn')
+    const hamburger = document.querySelectorAll('.menu li a')
+    const hamburgerA = Array.from(hamburger)
+    hamburgerA.forEach(function (element) {
+      element.addEventListener('click', function () {
+        navInput.checked = false
+      })
+    })
+  </script>
+</body>
+
+</html>
