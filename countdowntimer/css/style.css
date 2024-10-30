@@ -1,0 +1,135 @@
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 10px #fff;
+  margin-top: 40px;
+}
+
+#timerDisplay {
+  font-size: 2rem;
+  margin: 30px 0;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+}
+
+.timerFlex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.neon-input {
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.btnFlex {
+  display: flex;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btnStart,
+.btnStop,
+.btnReset {
+  font-size: 1rem;
+  width: 70px;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 0 0 10px #0ff;
+  text-transform: capitalize;
+}
+
+.btnStart {
+  box-shadow: 0 0 10px #0ff;
+}
+
+.btnStop {
+  box-shadow: 0 0 10px #ff0;
+}
+
+.btnReset {
+  box-shadow: 0 0 10px #0f0;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    background-color: #000;
+  }
+
+  50% {
+    background-color: #f00;
+  }
+}
+
+@media screen and (min-width:768px) {
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 100px;
+  }
+
+  #timerDisplay {
+    font-size: 4rem;
+    margin: 80px 0;
+  }
+
+  .timerFlex {
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+
+  .neon-input {
+    font-size: 4rem;
+    width: 120px;
+    height: 120px;
+  }
+
+  .btnFlex {
+    max-width: 550px;
+  }
+
+  .btnStart,
+  .btnStop,
+  .btnReset {
+    font-size: 2rem;
+    width: 140px;
+    height: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0aa;
+  }
+
+}
