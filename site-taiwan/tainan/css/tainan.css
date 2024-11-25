@@ -1,0 +1,731 @@
+@charset "utf-8";
+
+/* SP用header部 ココカラ */
+header {
+    background-image: url(../image/tn-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -45px 0;
+    height: 672px;
+    text-align: center;
+}
+
+.tainanInfo {
+    width: 100%;
+    height: 615px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 67px;
+    left: 88px;
+}
+
+h1 img {
+    width: 199px;
+    height: 372px;
+}
+
+.headDes {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+    width: 66%;
+    text-align: justify;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* SP用header部 ココマデ*/
+
+/* SP用パンくず部 ココカラ */
+.breadCrumb {
+    margin: 3px 0 0 8px;
+}
+
+.rightAngleBracket {
+    margin: 0 5px;
+}
+
+/* SP用パンくず部 ココマデ */
+
+
+/* SP用main部 ココカラ */
+main {
+    width: 79%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* SP用観光名所部 ココカラ */
+.attraction {
+    width: 100%;
+    margin: 48px auto 0;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+.headingSmall {
+    margin-left: 8px;
+}
+
+.attractionPlace {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 32px;
+    letter-spacing: 0.3em;
+}
+
+.attContainer1,
+.attContainer2 {
+    margin-top: 20px;
+}
+
+.attImageSub01,
+.attImageSub02 {
+    width: 100%;
+    height: 221px;
+    object-fit: cover;
+}
+
+.attImageSub01 {
+    object-position: -48px 2px;
+}
+
+.attractionDes1,
+.attractionDes2,
+.attractionDes3 {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.005rem;
+    background-color: rgba(237, 161, 132, 0.2);
+    text-align: justify;
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+.attractionDes1 {
+    padding: 20px 16px;
+}
+
+.attractionDes2 {
+    padding: 8px 16px;
+}
+
+.attractionDes3 {
+    padding: 8px 0;
+}
+
+.subFlex {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0;
+}
+
+.attSub1 img,
+.attSub2 img {
+    width: 140px;
+    object-fit: cover;
+}
+
+.border {
+    margin: 59px auto 60px;
+    border-bottom: 1px solid #000;
+    width: 225px;
+}
+
+.attSub3 img,
+.attSub4 img {
+    width: 137px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.attDes3 {
+    text-align: center;
+}
+
+.attTime {
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.attTimeSmall {
+    font-size: 12px;
+    letter-spacing: 0.01rem;
+    margin-left: 8px;
+}
+
+/* SP用観光名所部 ココマデ */
+
+
+/* SP用グルメ部 ココカラ */
+.gourmet {
+    width: 100%;
+    margin: 68px auto 0;
+}
+
+.headingSmall {
+    margin-left: 6px;
+}
+
+.gourmetDes {
+    font-size: 12px;
+    line-height: 1.6;
+    width: 225px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: justify;
+    margin: 31px auto 0;
+    padding: 12px 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.gourmetTitle {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.gourmetImage1,
+.gourmetImage2,
+.gourmetImage3,
+.gourmetImage4 {
+    width: 295px;
+    height: 130px;
+    object-fit: cover;
+    margin-top: 12px;
+}
+
+.gourmetImage2 {
+    object-position: 0 -24px;
+}
+
+.gourmetImage4 {
+    object-position: 0 -42px;
+}
+
+.gourmetContDes {
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 12px;
+}
+
+.modalRight {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.modalShow {
+    font-size: 12px;
+    text-align: center;
+    padding: 7px 18px 9px 23px;
+    border: solid 2px #eda184;
+    margin-left: auto;
+    background-color: transparent;
+}
+
+.modalShow::after {
+    content: "";
+    margin-left: 0.5em;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5em 0 0.5em 0.865em;
+    border-color: transparent transparent transparent #eda184;
+    transform: translateY(0.1em) scale(0.8);
+}
+
+/* SP用グルメ部 ココマデ */
+
+/* SP用モーダル部 ココカラ */
+.modalCont {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: auto;
+    text-align: right;
+    color: #fff;
+}
+
+.modalClose {
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    position: relative;
+    margin: 8px 8px 0 auto;
+}
+
+.modalClose::before,
+.modalClose::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: -2px;
+    border-bottom: 7px solid #000;
+}
+
+.modalClose::before {
+    transform: rotate(45deg);
+}
+
+.modalClose::after {
+    transform: rotate(-45deg);
+}
+
+.modalCont p {
+    text-align: center;
+}
+
+.modal1,
+.modal2,
+.modal3,
+.modal4 {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 52px auto 0;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.25);
+}
+
+.modal3 {
+    object-position: -35px 0;
+}
+
+/* SP用モーダル部 ココマデ */
+
+
+/* SP用癒しのスポット部 ココカラ */
+.healing {
+    width: 100%;
+    margin: 67px auto 128px;
+}
+
+.healing .headingSmall {
+    margin-left: 6px;
+}
+
+.healingDes {
+    font-size: 12px;
+    line-height: 1.6;
+    width: 225px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: justify;
+    margin: 30px auto 0;
+    padding: 12px 0;
+}
+
+.healingCont {
+    width: 295px;
+    height: 205px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.healingContDes {
+    font-size: 12px;
+    line-height: 1.6;
+    /* letter-spacing: 0.022rem; */
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* SP用癒しのスポット部 ココマデ */
+
+@media screen and (min-width:768px) {
+
+    /* PC用header部 ココカラ */
+    header {
+        background-position: 0 -628px;
+        height: 768px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    nav ul li:nth-of-type(4) {
+        pointer-events: none;
+    }
+
+    .tainanInfo {
+        max-width: 1200px;
+        height: 692px;
+    }
+
+    h1 {
+        top: 38px;
+        left: 280px;
+    }
+
+    h1 img {
+        width: 300px;
+        height: 540px;
+    }
+
+    .headDes {
+        font-size: 20px;
+        width: 40%;
+        bottom: 52px;
+        right: 20px;
+    }
+
+    /* PC用パンくず ココカラ */
+    .bcWidth {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .breadCrumb {
+        margin: 18px auto 0 21px;
+    }
+
+    .rightAngleBracket {
+        margin: 0 7px;
+    }
+
+    /* PC用ぱんくず ココマデ */
+    /* PC用header部 ココマデ */
+
+    /* PC用main部 ココカラ */
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* PC用観光名所部 ココカラ */
+    .attraction {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .attraction h2 {
+        margin: 144px 0 0 20px;
+    }
+
+    .attraction .headingSmall {
+        margin-left: 24px;
+    }
+
+    .attraction1,
+    .attraction2 {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .attractionPlace {
+        font-size: 36px;
+        text-align: left;
+        margin: 55px 0 0 0;
+    }
+
+    .attContainer1,
+    .attContainer2 {
+        margin: 0;
+    }
+
+    .attContainer1 .attContainerFlex,
+    .attContainer2 .attContainerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .attContainer1 .attContainerFlex {
+        margin-top: 20px;
+    }
+
+    .attImageSub01,
+    .attImageSub02 {
+        width: 600px;
+        height: 320px;
+    }
+
+    .attImageSub01 {
+        object-position: 0 -17px;
+    }
+
+    .attractionDes1,
+    .attractionDes2,
+    .attractionDes3 {
+        font-size: 20px;
+        letter-spacing: 0;
+        background-color: rgba(108, 186, 216, 0.2);
+        margin: 0;
+    }
+
+    .attractionDes1 {
+        width: 480px;
+        padding: 20px;
+    }
+
+    .attractionDes2 {
+        width: 480px;
+        padding: 18px 20px;
+    }
+
+    .attractionDes3 {
+        width: 480px;
+        padding: 18px 0;
+    }
+
+
+    .subFlex {
+        width: 600px;
+        margin: 0;
+    }
+
+    .attSub1 img,
+    .attSub2 img,
+    .attSub3 img,
+    .attSub4 img {
+        width: 290px;
+        height: 177px;
+    }
+
+    .attSub1 img {
+        object-position: 0 -125px;
+    }
+
+    .attSub2 img {
+        object-position: 0 -37px;
+    }
+
+    .border {
+        width: 480px;
+        margin: 120px auto;
+    }
+
+    .attImageSub02 {
+        object-position: 0 -65px;
+    }
+
+    .attContainer2 .attContainerFlex {
+        margin-top: 28px;
+    }
+
+    .attContainer2 .attContainerFlex:last-of-type {
+        margin-top: 20px;
+    }
+
+    .attSub4 img {
+        object-position: 0 -11px;
+    }
+
+    .attTimeSmall {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    /* PC用観光名所部 ココマデ */
+
+    /* PC用グルメ部 ココカラ */
+    .gourmet {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gourmet h2 {
+        margin: 146px 20px 0 auto;
+    }
+
+    .gourmet .headingSmall {
+        margin-left: 6px;
+    }
+
+    .gourmetDes {
+        font-size: 20px;
+        width: 420px;
+        margin: 55px 75px 90px auto;
+        padding: 40px 0;
+    }
+
+    .gourmetFlex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 60px;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .gourmetCont1,
+    .gourmetCont2,
+    .gourmetCont3,
+    .gourmetCont4 {
+        max-width: 510px;
+    }
+
+    .gourmetTitleFlex {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+    }
+
+    h3 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .gourmetTitle {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .gourmetImage1,
+    .gourmetImage2,
+    .gourmetImage3,
+    .gourmetImage4 {
+        width: 100%;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .gourmetImage2 {
+        object-position: 0 -40px;
+    }
+
+    .gourmetImage4 {
+        object-position: 0 -71px;
+    }
+
+    .gourmetContDes {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .modalRight {
+        margin-top: 20px;
+    }
+
+    .modalShow {
+        font-size: 20px;
+        padding: 15px 33px 15px 45px;
+    }
+
+    /* PC用グルメ部 ココマデ */
+
+    /* PC用モーダル部 ココカラ */
+    .modalClose {
+        width: 36px;
+        height: 36px;
+        margin: 20px 20px 0 0;
+    }
+
+    .modalClose::before,
+    .modalClose::after {
+        width: 45px;
+        top: 13px;
+        right: -5px;
+        border-bottom: 10px solid #000;
+    }
+
+    .modalClose:hover {
+        cursor: pointer;
+    }
+
+    .modal1,
+    .modal2,
+    .modal3,
+    .modal4 {
+        width: 450px;
+        height: 450px;
+        border: 0;
+        margin: 64px auto 0;
+    }
+
+    .modal3 {
+        object-position: -41px 0;
+    }
+
+    .modal4 {
+        width: 588px;
+    }
+
+    /* PC用モーダル部 ココマデ */
+
+
+    /* PC用癒しのスポット部 ココカラ */
+    .healing {
+        max-width: 1200px;
+        margin: 0 auto 240px;
+    }
+
+    .healing h2 {
+        margin: 144px 0 0 20px;
+    }
+
+    .healing .headingSmall {
+        margin-left: 24px;
+    }
+
+    .healingDes {
+        font-size: 20px;
+        width: 420px;
+        letter-spacing: 0.005rem;
+        margin: 55px 0 0 75px;
+        padding: 40px 0;
+    }
+
+    .healing h3 {
+        font-weight: 700;
+        margin-top: 80px;
+    }
+
+    .healingFlex1,
+    .healingFlex2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .healingFlex1 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .healingFlex2 {
+        flex-direction: row-reverse;
+    }
+
+    .healingCont {
+        width: 600px;
+        height: 360px;
+        margin: 0;
+    }
+
+    .healingContDes {
+        font-size: 20px;
+        width: 480px;
+        margin: 0;
+    }
+
+    /* PC用癒しのスポット部 ココマデ */
+    /* PC用main部 ココマデ */
+}

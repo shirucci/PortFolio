@@ -1,0 +1,744 @@
+@charset "utf-8";
+
+/* SP用header部 ココカラ */
+header {
+  background-image: url("../image/tc-top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 667px;
+  background-position: -20px 0;
+  text-align: center;
+}
+
+.taichungInfo {
+  width: 100%;
+  height: 615px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 67px;
+  left: 88px;
+}
+
+h1 img {
+  width: 199px;
+  height: 372px;
+}
+
+.headDes {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  width: 66%;
+  text-align: justify;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+/* SP用header部 ココマデ*/
+
+
+/* SP用パンくず部 ココカラ */
+.breadCrumb {
+  margin: 8px 0 0 8px;
+}
+
+.rightAngleBracket {
+  margin: 0 5px;
+}
+
+/* SP用パンくず部 ココマデ */
+
+
+/* SP用main部 ココカラ */
+main {
+  width: 79%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* SP用観光名所部 ココカラ */
+.attraction {
+  width: 100%;
+  margin: 48px auto 0;
+
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.headingSmall {
+  margin-left: 8px;
+}
+
+.attractionPlace {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 32px;
+  letter-spacing: 0.3em;
+}
+
+.attContainer1,
+.attContainer2 {
+  margin-top: 20px;
+}
+
+.attSub01,
+.attSub03 {
+  width: 100%;
+  height: 221px;
+  object-fit: cover;
+}
+
+.attSub01 {
+  object-position: -19px 0;
+}
+
+.attractionDes1,
+.attractionDes2,
+.attractionDes3,
+.attractionDes4 {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
+  background-color: rgba(237, 161, 132, 0.2);
+  text-align: justify;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.attractionDes1,
+.attractionDes3 {
+  padding: 20px 16px;
+}
+
+.attractionDes2,
+.attractionDes4 {
+  padding: 8px 16px;
+}
+
+.attSub02,
+.attSub04 {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.attSub04 {
+  object-position: top;
+}
+
+.border {
+  margin: 57px auto 60px;
+  border-bottom: 1px solid #000;
+  width: 225px;
+}
+
+/* SP用観光名所部 ココマデ */
+
+
+/* SP用文化施設部 ココカラ  */
+.museum {
+  margin-top: 68px;
+}
+
+.museumPr {
+  width: 225px;
+  font-size: 12px;
+  line-height: 1.6;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 30px auto 0;
+  padding: 12px 0;
+}
+
+.museumHead {
+  text-align: left;
+  margin-top: 43px;
+}
+
+.museumTitle {
+  font-size: 12px;
+}
+
+.museumName {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 11px;
+}
+
+.museSub1,
+.museSub2,
+.museSub3,
+.museSub4 {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+.museSub1 {
+  object-position: bottom;
+}
+
+.museumInfo {
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.modalRight {
+  margin-top: 12px;
+  text-align: right;
+}
+
+.modalShow {
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 6px 8px 10px;
+  border: solid 2px #6091d3;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.modalShow::after {
+  content: "";
+  margin-left: 0.5em;
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.5em 0 0.5em 0.865em;
+  border-color: transparent transparent transparent #6091d3;
+  transform: translateY(0.1em) scale(0.8);
+}
+
+/* SP用モーダル部 ココカラ */
+.modalCont {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6091d3;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto;
+  text-align: right;
+  color: #fff;
+}
+
+.modalClose {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  position: relative;
+  margin: 8px 8px 0 auto;
+}
+
+.modalClose::before,
+.modalClose::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  top: 10px;
+  right: -2px;
+  border-bottom: 7px solid #000;
+}
+
+.modalClose::before {
+  transform: rotate(45deg);
+}
+
+.modalClose::after {
+  transform: rotate(-45deg);
+}
+
+.modalInner {
+  max-width: 295px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 44px;
+}
+
+.modalImg {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modalImg img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.modalInfo {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* SP用モーダル部 ココマデ*/
+/* SP用文化施設部 ココマデ */
+
+
+/* SP用スイーツ部 ココカラ */
+.sweets {
+  margin-top: 67px;
+  margin-bottom: 128px;
+}
+
+.sweetsName {
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+.sweetsInfo1,
+.sweetsInfo2,
+.sweetsInfo3 {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.016rem;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.sweetsContainer1 {
+  margin-top: 20px;
+}
+
+.swPhoto01 {
+  width: 100%;
+  height: 190px;
+}
+
+.swFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.swSubPhoto01,
+.swSubPhoto02 {
+  width: 140px;
+  height: 190px;
+}
+
+.sweets3Cont2 {
+  margin-top: 20px;
+}
+
+.swPhoto02 {
+  width: 100%;
+  height: 184px;
+}
+
+
+/* SP用スイーツ部 ココマデ */
+/* SP用main部 ココマデ */
+
+
+/* ↓PC　画面が768px以上の時↓ */
+@media screen and (min-width:768px) {
+
+  /* PC用header部 ココカラ */
+  header {
+    background-position: 0 -530px;
+    height: 768px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  nav ul li:nth-of-type(3) {
+    pointer-events: none;
+  }
+
+  .taichungInfo {
+    max-width: 1200px;
+  }
+
+  h1 {
+    top: 38px;
+    left: 280px;
+  }
+
+  h1 img {
+    width: 300px;
+    height: 540px;
+  }
+
+  .headDes {
+    font-size: 20px;
+    width: 40%;
+    bottom: 20px;
+    right: 20px;
+  }
+
+
+  /* PC用パンくず ココカラ */
+  .bcWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .breadCrumb {
+    margin: 18px auto 0 21px;
+  }
+
+  .rightAngleBracket {
+    margin: 0 7px;
+  }
+
+  /* PC用ぱんくず ココマデ */
+  /* PC用header部 ココマデ */
+
+
+  /* PC用main部 ココカラ */
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* PC用観光名所部 ココカラ */
+  .attraction {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .attraction h2 {
+    margin: 102px 0 0 20px;
+  }
+
+  .attraction .headingSmall {
+    margin-left: 24px;
+  }
+
+  .attractionPlace {
+    font-size: 36px;
+    text-align: left;
+    margin: 55px 0 0 0;
+  }
+
+  .attraction1,
+  .attraction2 {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .attContainer1,
+  .attContainer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .attContainer1 {
+    margin: 20px 0 0 0;
+  }
+
+  .attContainer1 .imgAtt,
+  .attContainer2 .imgAtt {
+    flex-basis: 600px;
+    margin: 0;
+  }
+
+  .desAtt {
+    flex-basis: 480px;
+    margin: 0;
+  }
+
+  .attSub01,
+  .attSub03 {
+    height: 368px;
+    object-position: center;
+  }
+
+  .attractionDes1,
+  .attractionDes2,
+  .attractionDes3,
+  .attractionDes4 {
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: justify;
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+
+  .attSub02 {
+    height: 200px;
+    object-position: 0 -126px;
+  }
+
+  .attSub04 {
+    height: 200px;
+  }
+
+  .attractionDes2 {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .border {
+    width: 420px;
+    margin-top: 118px;
+    margin-bottom: 120px;
+  }
+
+  /* PC用観光名所部 ココマデ */
+
+
+  /* PC用文化施設部 ココカラ */
+  .museum {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .titleContainer {
+    width: 50%;
+  }
+
+  .museum h2 {
+    margin: 146px 20px 0 auto;
+  }
+
+  .museum .headingSmall {
+    margin-left: 14px;
+  }
+
+  .museumPr {
+    width: 440px;
+    font-size: 20px;
+    margin: 55px 60px 90px auto;
+    padding: 20px 0 12px;
+  }
+
+  .museContainer {
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 67px auto 0;
+  }
+
+  .museum01,
+  .museum02 {
+    flex-basis: 530px;
+  }
+
+  .museumHead {
+    margin: 0;
+  }
+
+  .museumTitle {
+    font-size: 24px;
+  }
+
+  .museumName {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  .museSub1,
+  .museSub2,
+  .museSub3,
+  .museSub4 {
+    height: 270px;
+    margin-top: 30px;
+  }
+
+  .museSub1 {
+    object-position: 0 -60px;
+  }
+
+  .museumInfo {
+    font-size: 20px;
+    margin-top: 22px;
+    text-align: left;
+  }
+
+  .modalShow {
+    font-size: 20px;
+    padding: 15px 19px;
+    margin-top: 8px;
+  }
+
+  .modalShow:hover {
+    color: #fff;
+    background-color: #6091d3;
+    cursor: pointer;
+  }
+
+  .modalShow:hover::before,
+  .modalShow:hover::after {
+    border-left-color: #fff;
+  }
+
+  /* PC用モーダル部 ココカラ */
+  .modalClose {
+    width: 36px;
+    height: 36px;
+    margin: 20px 20px 0 auto;
+  }
+
+  .modalClose:hover {
+    cursor: pointer;
+  }
+
+  .modalInner {
+    max-width: 780px;
+  }
+
+  .modalTitle {
+    font-size: 36px;
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  .modalImg img {
+    width: 360px;
+    height: 360px;
+  }
+
+  .modalInfo {
+    font-size: 20px;
+  }
+
+  /* PC用モーダル部 ココマデ */
+  /* PC用文化施設部 ココマデ */
+
+
+  /* PC用スイーツ部 ココカラ */
+  .sweets {
+    max-width: 1200px;
+    margin: 145px auto 240px;
+  }
+
+  .sweetsDes {
+    width: 530px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .sweets h2 {
+    margin: 0 auto;
+  }
+
+  .sweets .headingSmall {
+    margin-left: 24px;
+  }
+
+  .sweetsName {
+    font-size: 36px;
+    margin-top: 55px;
+  }
+
+  .sweetsInfo1 {
+    width: 420px;
+    font-size: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 40px auto 0;
+    padding: 20px 0;
+    text-align: justify;
+    letter-spacing: 0;
+  }
+
+  .sweetsInfo2 {
+    letter-spacing: 0.006em;
+    margin: 0;
+  }
+
+  .sweetsInfo3 {
+    letter-spacing: 0;
+  }
+
+  .sweetsContainer {
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 0;
+  }
+
+  .sweetsContainer1 {
+    margin: 0;
+  }
+
+  .swPhoto01 {
+    width: 600px;
+    height: 368px;
+  }
+
+  .sweetsInfo2 {
+    width: 480px;
+    font-size: 20px;
+  }
+
+  .sweetsContainer3 {
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0;
+
+  }
+
+  .swFlex {
+    flex-basis: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .swSubPhoto01,
+  .swSubPhoto02 {
+    width: 280px;
+    height: 388px;
+  }
+
+  .swSub3 {
+    flex-basis: 480px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .sweets3Cont2 {
+    margin: 0;
+  }
+
+  .swPhoto02 {
+    height: 300px;
+    margin: 0;
+  }
+
+  .sweetsInfo3 {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  /* PC用スイーツ部 ココマデ */
+  /* PC用main部 ココマデ */
+}

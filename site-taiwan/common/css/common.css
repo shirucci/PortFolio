@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+/*  各下層ページのHTMLに適用してもらいたい場所
+
+各見出し部（attraction等）を<h2>で記述し、ひらがな部分に
+<span class=".headingSmall"></span>
+を追記してください。(′・ω・`) 
+なお、margin設定等は個々に設定してください。
+*/
+/* 追記　ローディング画面
+下記要素を<body>と<header>の間にコピペしてください。
+<div class="loading active" id="loading">
+    <img src="../common/image/logo.svg" alt="ローディングロゴ" class="loadingImg">
+  </div>
+*/
+
+/*  各下層ページのCSSに適用してもらいたいプロパティ（PC用のみ） */
+
+/* 台北ページ */
+/* header nav ul li:nth-of-type(2) {
+  pointer-events: none;
+} */
+
+/* 台中ページ */
+/* header nav ul li:nth-of-type(3) {
+  pointer-events: none;
+} */
+
+/* 台南ページ */
+/* header nav ul li:nth-of-type(4) {
+  pointer-events: none;
+} */
+
+
+
+* {
+  text-transform: capitalize;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* SP用ローディング画面 ココカラ */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0180be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 100;
+}
+
+.loadingImg {
+  width: 287px;
+  height: 117px;
+}
+
+.loading.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ローディングアニメーション */
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loadingImg {
+  animation: 3s anime;
+}
+
+/* SP用ローディング画面 ココマデ */
+
+
+
+/* SP用header部 ココカラ */
+.headerFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: left;
+}
+
+.logo img {
+  width: 111px;
+  margin: 8px 0 0 8px;
+}
+
+.openBtn img,
+.closeBtn img {
+  width: 48px;
+  height: 48px;
+  padding: 8px 8px 0 0;
+  cursor: pointer;
+}
+
+/* SP用header部 ココマデ */
+
+
+/* SP用nav部 ココカラ */
+.slideMenu {
+  width: 100%;
+  height: 100%;
+  background-color: #211e1e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: .5s;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.slideMenu.active {
+  transform: translateX(0);
+}
+
+.navWrapper {
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 0 8px;
+
+}
+
+.navLogo {
+  pointer-events: none;
+}
+
+.navLogo img {
+  width: 100px;
+}
+
+.slideMenu ul li {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 32px;
+  text-align: center;
+  padding: 0;
+}
+
+.slideMenu ul li:first-of-type {
+  margin-top: 72px;
+}
+
+.slideMenu ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* SP用nav部 ココマデ */
+
+
+/* SP用見出し部ココカラ */
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  background-image: url(../../common/image/heading.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0 top -8px;
+  width: 220px;
+  height: 40px;
+}
+
+.headingSmall {
+  font-size: 12px;
+}
+
+/* SP用見出し部ココマデ */
+
+/* SP用パンくずnav部ココカラ */
+.breadCrumb a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* SP用パンくずnav部ココマデ */
+
+/* footer ここから*/
+footer {
+  text-align: center;
+}
+
+.capitalBig {
+  text-transform: uppercase;
+}
+
+#top_btn {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(122, 122, 122, 0.7);
+  border: none;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 50;
+  bottom: 20px;
+  right: 8px;
+  display: none;
+}
+
+#top_btn::after {
+  content: "";
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-top: 6px solid #ffffff;
+  border-left: 6px solid #ffffff;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 12.5px;
+}
+
+footer .blueArea {
+  width: 100%;
+  background: #007ab7;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.blueArea .taiwanFlag {
+  width: 32px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+
+.pageInfo {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.pageInfo li {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 12px;
+}
+
+.pageInfo li:last-of-type {
+  margin-bottom: 20px;
+}
+
+.pageInfo li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  padding: 0 0 8px 7.5px;
+}
+
+.snsLogo {
+  width: 148px;
+  height: 38px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.fb {
+  width: 38px;
+  height: 38px;
+}
+
+.insta {
+  width: 32px;
+  height: 32px;
+}
+
+.x {
+  width: 30px;
+  height: 30px;
+}
+
+.blueArea .taiwanLogo {
+  display: none;
+}
+
+.company {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* ↓PC　画面が768px以上の時↓ */
+@media screen and (min-width:768px) {
+
+  /* PC用ローディング画面 ココカラ */
+  .loadingImg {
+    width: 318px;
+    height: 128px;
+  }
+
+  /* PC用ローディング画面 ココマデ */
+
+
+
+  /* PC用header部 ココカラ */
+  .headerArea {
+    height: 70px;
+    margin: 20px 0 0 20px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .openBtn,
+  .closeBtn {
+    display: none;
+  }
+
+  /* PC用header部 ココマデ */
+
+
+  /* PC用nav部 ココカラ */
+  .slideMenu {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin: 0 auto;
+    position: static;
+    height: 76px;
+    transform: translateX(0);
+  }
+
+  .navWrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+
+  .navLogo {
+    pointer-events: inherit;
+  }
+
+  .navLogo img {
+    width: 140px;
+    height: 56px;
+  }
+
+  .svgHover:hover {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(1269%) hue-rotate(168deg) brightness(104%) contrast(96%);
+  }
+
+  .slideMenu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slideMenu ul li:first-of-type {
+    margin-top: 36px;
+  }
+
+  .slideMenu ul li {
+    margin-top: 36px;
+    margin-right: 40px;
+  }
+
+  .slideMenu ul li:last-of-type {
+    margin-right: 0;
+    padding-right: 20px;
+  }
+
+  .slideMenu ul li a {
+    font-size: 24px;
+    text-transform: inherit;
+    border: 0;
+  }
+
+  .slideMenu ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #0ff;
+  }
+
+  /* PC用nav部 ココマデ */
+
+
+  /* PC用見出し部ココカラ */
+  h2 {
+    font-size: 48px;
+    width: 530px;
+    height: 96px;
+    background-position: 0 -25px;
+  }
+
+  .headingSmall {
+    font-size: 24px;
+  }
+
+  /* PC用見出し部ココマデ */
+
+  /* PC用パンくずnav部ココカラ */
+  .breadCrumb {
+    max-width: 1200px;
+    font-size: 20px;
+  }
+
+  .breadCrumb a:hover {
+    color: #007ab7;
+  }
+
+  .bcSub {
+    margin-left: 20px;
+  }
+
+  .rightAngleBracket {
+    font-size: 24px;
+  }
+
+  /* PC用パンくずnav部ココマデ */
+
+
+  /* ↓PC用footer部 ここから↓ */
+  footer {
+    margin: 0 auto;
+  }
+
+  #top_btn {
+    width: 100px;
+    height: 100px;
+    bottom: 150px;
+    right: 40px;
+  }
+
+  #top_btn::after {
+    width: 30px;
+    height: 30px;
+    border-top: 10px solid #ffffff;
+    border-left: 10px solid #ffffff;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 35px;
+    left: 27px;
+  }
+
+  footer .blueArea {
+    width: 100%;
+    background: #007ab7;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .topBtn #top_btn:hover {
+    transform: translateY(-12px);
+    transition: all 300ms ease;
+  }
+
+  .blueArea .taiwanFlag {
+    width: 64px;
+    height: 48px;
+  }
+
+  .footerContainer {
+    max-width: 1160px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .pageInfo {
+    width: 33%;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .pageInfo li {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+
+  .pageInfo li:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .pageInfo li a {
+    font-size: 20px;
+    padding: 0 0 12px 0px;
+  }
+
+  .pageInfo li:hover {
+    transform: translateX(13px);
+    transition: all 200ms ease-out;
+  }
+
+  .snsLogo {
+    width: 33%;
+    max-width: 203px;
+    height: 55px;
+    margin: 0 0 5px 0;
+    align-self: flex-end;
+    right: 0;
+  }
+
+  .fb {
+    width: 55px;
+    height: 55px;
+  }
+
+  .insta {
+    width: 45px;
+    height: 45px;
+  }
+
+  .x {
+    width: 43px;
+    height: 43px;
+  }
+
+  .snsLogo a:hover {
+    transform: scale(0.8);
+  }
+
+  .blueArea .taiwanLogo {
+    display: inline-block;
+    width: 240px;
+    height: 96px;
+    margin: -192px 0 20px 0;
+  }
+
+  small {
+    font-size: 12px;
+  }
+}
